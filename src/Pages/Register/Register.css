@@ -1,0 +1,170 @@
+
+
+.registerSection,
+.loginSection,
+.sendCodeSection,
+.forgetPasswordSection,
+.resetPasswordSection,
+.sendCodeForForgetPasswordSection {
+  margin: 20px;
+  width: 55%;
+  margin: auto;
+  display: flex;
+  border-radius: 40px;
+}
+
+.registerSection .registrationImg,
+.loginSection img,
+.sendCodeSection img,
+.forgetPasswordSection img,
+.resetPasswordSection img ,.sendCodeForForgetPasswordSection img {
+  width: 35%;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  aspect-ratio: 120/200;
+}
+
+.registerSection .registerForm .logo {
+  width: 50%;
+}
+.registerForm,
+.loginForm,
+.forgetPasswordForm,
+.sendCodeForm,
+.resetPasswordForm ,.sendCodeForForgetPasswordForm {
+  width: 70%;
+  padding: 20px 5px;
+  position: relative;
+}
+
+.registerForm::after, .loginForm::after , .forgetPasswordForm::after
+,.sendCodeForm::after,.resetPasswordForm::after,.sendCodeForForgetPasswordForm::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border-top-right-radius: 40px;
+  border-top: 100px solid #f49a0b;
+  border-left: 90px solid transparent;
+}
+
+/* .active  {
+    transition-delay: 0s;
+    transform: translateX(-400px);
+} */
+
+.registerSection .registerForm input,
+.loginSection .loginForm input,
+.resetPasswordSection .resetPasswordForm input,
+.forgetPasswordSection .forgetPasswordForm input ,
+.sendCodeSection .sendCodeForm input ,
+.sendCodeForForgetPasswordSection .sendCodeForForgetPasswordForm input{
+  padding: 7px 35px;
+  border-radius: 40px;
+}
+
+.phone,
+.email,
+.password,
+.code {
+  background-image: url("/phoneIcon.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  background-size: 18px;
+  background-position-y: center;
+}
+
+.email {
+  background-image: url("/emailIcon.svg");
+}
+.password {
+  background-image: url("/passwordIcon.svg");
+}
+.input-boxPass {
+  position: relative;
+}
+.eyeIcon {
+    position: absolute;
+    right: 10px;
+    width:22px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.haveAccount,
+.forgetPassword {
+  text-decoration-line: underline;
+  color: #041aae;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+@media (min-width: 650px) and (max-width: 938px) {
+  .registerSection {
+    width: 70%;
+  }
+  .registerSection .registerForm {
+    width: 70%;
+  }
+}
+
+@media (min-width: 551px) and (max-width: 650px) {
+  .registerSection {
+    width: 90%;
+  }
+
+  .registerSection .registerForm input {
+    font-size: 14px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 800px) {
+  .registerForm .authTitle{
+      font-size: 25px;
+    }
+  .registerForm::after{
+    border-top: 90px solid #f49a0b;
+    border-left: 80px solid transparent;
+  }
+  
+}
+
+@media (min-width: 320px) and (max-width: 550px) {
+  .registerSection {
+    width: 98%;
+  }
+  .registerSection .registerForm {
+    width: 90%;
+  }
+  .registerSection img {
+    width: 30%;
+  }
+
+  .registerSection .registerForm input {
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .haveAccount {
+    font-size: 10px;
+  }
+  .registerSection .registerForm .submitBtn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .eyeIcon {
+    
+    width:60px;
+   
+  }
+
+  .registerForm::after{
+    border-top: 80px solid #f49a0b;
+    border-left: 70px solid transparent;
+  }
+}

@@ -1,0 +1,128 @@
+.sendCodeSection .infoPara{
+    font-size: 24px;
+}
+
+.sendCodeForm .authTitle {
+    font-size: 27px;
+  }
+  
+
+@media (min-width: 650px) and (max-width: 938px) {
+    .sendCodeSection {
+      width: 70%;
+    }
+    .sendCodeSection .sendCodeForm {
+      width: 70%;
+    }
+  }
+
+  @media (min-width: 650px) and (max-width: 800px) {
+    .sendCodeForm .authTitle {
+        font-size: 24px;
+      }
+    .sendCodeForm::after{
+      border-top: 95px solid #f49a0b;
+      border-left: 85px solid transparent;
+    }
+    
+  }
+  
+  @media (min-width: 551px) and (max-width: 650px) {
+    .sendCodeForm .authTitle{
+      font-size: 25px;
+    }
+    .sendCodeSection {
+      width: 90%;
+    }
+  
+
+    .sendCodeSection .sendCodeForm input {
+      font-size: 14px;
+      width: 100%;
+    }
+  }
+
+
+  @media (min-width: 381px) and (max-width: 550px) {
+    .sendCodeForm .authTitle{
+      font-size: 22px;
+    }
+    .sendCodeForm::after{
+        border-top: 90px solid #f49a0b;
+        border-left: 80px solid transparent;
+      }
+
+      .sendCodeSection {
+        width: 98%;
+      }
+      .sendCodeSection .sendCodeForm {
+        width: 90%;
+      }
+      .sendCodeSection img {
+        width: 30%;
+      }
+    
+      .sendCodeSection .sendCodeForm input {
+        font-size: 13px;
+        width: 100%;
+      }
+    
+      .sendCodeSection .sendCodeForm .submitBtn {
+        width: 100%;
+        font-size: 15px;
+      }
+  
+      .sendCodeForm .infoPara{
+        font-size: 18px;
+      }
+      .sendCodeForm .emailWord{
+        font-size: 20px;
+    
+      }
+   
+  }
+
+  @media (min-width: 320px) and (max-width:380px) {
+    .sendCodeForm .authTitle{
+        font-size: 20px;
+      }
+    .sendCodeSection {
+        width: 98%;
+      }
+      .sendCodeSection .sendCodeForm {
+        width: 90%;
+      }
+      .sendCodeSection img {
+        width: 30%;
+      }
+    
+      .sendCodeSection .sendCodeForm input {
+        font-size: 13px;
+        width: 100%;
+      }
+    
+      .sendCodeSection .sendCodeForm .submitBtn {
+        width: 100%;
+        font-size: 15px;
+      }
+  
+      .sendCodeForm .infoPara{
+        font-size: 18px;
+      }
+      .sendCodeForm .emailWord{
+        font-size: 20px;
+    
+      }
+    .sendCodeForm::after{
+          border-top: 80px solid #f49a0b;
+          border-left: 70px solid transparent;
+        }
+    .arrowIcon{
+      width: 20px;
+      
+    }
+      
+  }
+
+
+  
