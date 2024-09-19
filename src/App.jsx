@@ -8,6 +8,7 @@ import Register from './Pages/Register/Register';
 import SendCode from './Pages/SendCode/SendCode';
 import ForgetPassword from './Pages/ForgetPassword/ForgetPassword'
 import ResetPassword from './Pages/ResetPassword/ResetPassword'
+import HomePage from './Pages/HomeApp'
 import SendCodeForForgetPassword from './Pages/SendCodeForForgetPassword/SendCodeForForgetPassword';
 function App() {
   const router = createBrowserRouter([
@@ -21,7 +22,7 @@ function App() {
         },
         {
           path: "/Home",
-          element: <Register />,
+          element: <HomePage />,
         },
       
         {

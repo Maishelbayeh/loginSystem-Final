@@ -1,0 +1,53 @@
+.slider-container {
+  width: 100%;
+  /* Make container take the full width */
+ 
+  /* Make container take the full height of the viewport (or set this as desired) */
+  position: relative;
+}
+
+.slide {
+  position: relative;
+  height: 100%;
+}
+
+.slider-container img {
+  width: 100%;
+  height: 570px;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  z-index: 1;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 30px;
+  animation: fadeInText 0.5s ease-out forwards;
+}
+
+.slide-image {
+  object-fit: cover
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Start from slightly below */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    /* Move to normal position */
+  }
+}

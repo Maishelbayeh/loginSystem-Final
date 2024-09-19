@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    display: flex;
+    width: calc(100% - 162px);
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 80px;
+}
+
+.home .slider {
+    margin: auto;
+    width: 100%;
+}
+.why-us{
+    padding-top: 35px;
+    padding-bottom: 45px;
+}
+.why-us h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: #635b5b;
+}
+.card-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+.journies {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.journies .container {
+    padding: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.journies span {
+    font-size: 15px;
+    color: #f0ad49;
+    background-color: #eddabe;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #9a958c;
+}
+
+.journies h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: #635b5b;
+
+}
+
+.journies h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    color: #9a958c;
+
+}
+
+.item-list {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.item {
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Collapsed state (only show first 3 items) */
+.collapsed {
+    max-height: 440px;
+    /* Adjust based on number of items visible (e.g. 3 items) */
+}
+
+/* Expanded state (show all items) */
+.expanded {
+    max-height: 850px;
+    /* Adjust max height for the entire list */
+}
+
+/* Show More/Show Less button */
+.toggle-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #f0ad49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #ff9900;
+}
